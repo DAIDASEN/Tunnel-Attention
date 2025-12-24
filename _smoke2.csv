@@ -1,0 +1,6 @@
+experiment,model,dataset,task_type,example_id,context_length,length_bucket,gold_answers,prediction,metric,score
+longbench_phase1,qwen3-0.6b,passage_retrieval_en_e,synthetic_retrieval,c0fe2309ca55ac01442fa28387a766461a40e92ccba36c1f,6262,4k-8k,Paragraph 7,1. 12,accuracy,0.0
+longbench_phase1,qwen3-0.6b,passage_retrieval_en_e,synthetic_retrieval,763cf6ac464e16d4f5d61b69b685a6771fef3cfbe5fc326d,8723,8k+,Paragraph 14,24,accuracy,0.0
+longbench_phase1,qwen3-0.6b,passage_retrieval_en_e,synthetic_retrieval,6db5d771ecd6ffbbc157fb27596a8e1ebda3cf41dde1173b,3599,0-4k,Paragraph 9,Paragraph 9.,accuracy,1.0
+longbench_phase1,qwen3-0.6b,passage_retrieval_en_e,synthetic_retrieval,d1a3433f92c83bfdb6f55cc101113b8e1a616035fc72ccf3,3405,0-4k,Paragraph 9,9. Bourne,accuracy,0.0
+longbench_phase1,qwen3-0.6b,passage_retrieval_en_e,synthetic_retrieval,3a40d35c65b9ce79803469088ac7204019af121390116684,2524,0-4k,Paragraph 7,Paragraph 7.,accuracy,1.0
