@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+=== [Length Sweep] 模型: qwen3-0.6b ===
+
+  - 目标上下文长度 ≈ 4096 tokens (~2867 words)
+qwen3-0.6b L=4096:   0%|          | 0/30 [00:00<?, ?it/s]qwen3-0.6b L=4096:   0%|          | 0/30 [00:15<?, ?it/s]
+[WARN] API 调用失败（qwen3-0.6b, 尝试 1/3）: Error code: 400 - {'error': {'message': 'parameter.enable_thinking must be set to false for non-streaming calls', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_parameter_error'}, 'id': 'chatcmpl-684bad54-57f8-4c89-aa1f-15191a47ca0e', 'request_id': '684bad54-57f8-4c89-aa1f-15191a47ca0e'}
+[WARN] API 调用失败（qwen3-0.6b, 尝试 2/3）: Error code: 400 - {'error': {'message': 'parameter.enable_thinking must be set to false for non-streaming calls', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_parameter_error'}, 'id': 'chatcmpl-045ec3d4-a24a-484d-a865-4e6c9ae084c2', 'request_id': '045ec3d4-a24a-484d-a865-4e6c9ae084c2'}
+[WARN] API 调用失败（qwen3-0.6b, 尝试 3/3）: Error code: 400 - {'error': {'message': 'parameter.enable_thinking must be set to false for non-streaming calls', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_parameter_error'}, 'id': 'chatcmpl-b1c168b0-6f74-4889-a237-bf20049df918', 'request_id': 'b1c168b0-6f74-4889-a237-bf20049df918'}
+Traceback (most recent call last):
+  File "/mnt/c/Users/31670/Desktop/CODE/Tunnel-Attention/phase1_qwen3_long_context_api.py", line 573, in <module>
+    main()
+  File "/mnt/c/Users/31670/Desktop/CODE/Tunnel-Attention/phase1_qwen3_long_context_api.py", line 541, in main
+    run_length_sweep(
+  File "/mnt/c/Users/31670/Desktop/CODE/Tunnel-Attention/phase1_qwen3_long_context_api.py", line 211, in run_length_sweep
+    resp = call_qwen_chat(
+  File "/mnt/c/Users/31670/Desktop/CODE/Tunnel-Attention/phase1_qwen3_long_context_api.py", line 77, in call_qwen_chat
+    raise RuntimeError(f"API 调用连续失败 3 次，模型={model}")
+RuntimeError: API 调用连续失败 3 次，模型=qwen3-0.6b
